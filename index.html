@@ -1,26 +1,83 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" class="h-100">
 
 <head>
-    <!--------------------------------------metadata section-------------------------------------->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Enter your description here">
-    <meta name="keywords" content="keywords, go, here">
-    <meta name="author" content="Tom Christ">
-    <!-------------------------------------------title-------------------------------------------->
-    <title>This is the Title of the Website</title>
-    <!----------------------------This is where your style link goes (reset first!)--------------->
-    <link rel="stylesheet" type="text/css" href="reset sheet goes here">
-    <link rel="stylesheet" type="text/css" href="style sheet goes here">
 
+    <title>This is the Title of the Website</title>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+    <script type="text/javascript" src="assets/javascript/bootstrap.js"></script>
+    <!-- jquery -->
+    <script type="text/javascript" src="assets/javascript/jquery-3.4.1.js"></script>
+    <!-- custom -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
 </head>
 
-<body>
+<body class="d-flex flex-column h-100">
+    <div class="container">
+        <header>
+            <div class="row">
+                <!-- <div class="col-md-2"></div> -->
+                <div class="col-md">
+                    <h1 class="text-center" id="headline">Compu-guess!</h1>
+                    <p class="lead text-center">Match wits with the Machine! Press any letter to guess, but don't run out of chances!</p>
+                </div>
+                <!-- <div class="col-md-2"></div> -->
+            </div>
+        </header>
+        
+        <section>
+            <div class="row">
+                <!-- <div class="col-md-2"></div> -->
+                <div class="col-md">
+                    <article id="directions">
+                        <p>You will be given a random number at the start of each game.</p>
+                        <p>There are four crystals below. By clicking a crystal you will add a specific amount of points to your total score.</p>
+                        <p>You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number.</p>
+                        <p>The value of each crystal is hidden from you until you click it.</p>
+                        <p>Each time the game starts the game will change the value of each crystal.</p>
+                    </article>
+                </div>
+                <!-- <div class="col-md-2"></div> -->
+            </div>
+            <div class="row">
+                <!-- <div class="col-md-2"></div> -->
+                <div class="col-md">
+                    <div id="target-number"></div>
+                </div>
+                <div class="col-md">
+                    <div id="scoreboard"></div>
+                </div>
+                <!-- <div class="col-md-2"></div> -->
+            </div>
+            <div class="row">
+                <!-- <div class="col-md-2"></div> -->
+                <div class="col-md">
+                    <div id="crystals"></div>
+                </div>
+                <!-- <div class="col-md-2"></div> -->
+            </div>
+            <div class="row">
+                <!-- <div class="col-md-2"></div> -->
+                <div class="col-md">
+                    <p>Your total score is:</p>
+                    <div id="total-score"></div>
+                </div>
+                <!-- <div class="col-md-2"></div> -->
+            </div>
+        </section>
+            
+        <footer class="footer mt-auto py-3">
+            <a href="https://kiselblat.github.io/">Back to Profile</a>
+        </footer>
+        
 
-    <a href="#">
-        Let's Go!
-    </a>
+    </div>
 
 </body>
 
