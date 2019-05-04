@@ -1,0 +1,10 @@
+#crystals {
+  background-color: yellow;
+  display: inline-block;
+}
+
+.crystal-button {
+  background-color: green;
+  height: 50px;
+  width: 50px;
+}
