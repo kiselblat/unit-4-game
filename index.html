@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>This is the Title of the Website</title>
+    <title>The Crystal Game</title>
 
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <!-- bootstrap -->
@@ -48,10 +48,19 @@
             <div class="row">
                 <!-- <div class="col-md-2"></div> -->
                 <div class="col-md">
-                    <div id="target-number">0</div>
+                    <div id="target-number"></div>
                 </div>
                 <div class="col-md">
-                    <div id="scoreboard">0</div>
+                    <div class="row">
+                        <div class="col-md">
+                            <span id="wins" class="score"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md">
+                            <span id="losses" class="score"></span>
+                        </div>
+                    </div>
                 </div>
                 <!-- <div class="col-md-2"></div> -->
             </div>
@@ -66,9 +75,14 @@
                 <!-- <div class="col-md-2"></div> -->
                 <div class="col-md">
                     <p>Your total score is:</p>
-                    <div id="total-score">0</div>
+                    <div id="total-number"></div>
                 </div>
                 <!-- <div class="col-md-2"></div> -->
+            </div>
+            <div class="row">
+                <div class="col-md">
+                    <div id="results"></div>
+                </div>
             </div>
         </section>
             
@@ -76,7 +90,6 @@
             <a href="https://kiselblat.github.io/">Back to Profile</a>
         </footer>
         
-
     </div>
 
 </body>
