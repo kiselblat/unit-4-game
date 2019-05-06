@@ -1,10 +1,30 @@
+body {
+  background-image: url(../images/crystal-cave-wallpaper-wallpaper-2.jpg);
+  color: white;
+  font-family: 'Charm', cursive;
+}
+
+header , section , footer {
+  background-color: rgba(0,0,0,0.5)
+}
+
+.power{
+  font-size: 2em;
+}
+
 #crystals {
-  background-color: yellow;
+  display: flex;
+}
+
+.crystal-button>img {
+  width: 150px;
+  height: 150px;
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid white;
   display: inline-block;
 }
 
-.crystal-button {
-  background-color: green;
-  height: 50px;
-  width: 50px;
+#headline {
+  font-family: 'UnifrakturMaguntia', cursive;
 }

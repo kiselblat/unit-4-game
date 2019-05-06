@@ -13,6 +13,8 @@
     <!-- jquery -->
     <!-- <script type="text/javascript" src="assets/javascript/jquery-3.4.1.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Charm|UnifrakturMaguntia" rel="stylesheet">
     <!-- custom -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <script type="text/javascript" src="assets/javascript/game.js"></script>
@@ -22,67 +24,70 @@
     <div class="container">
         <header>
             <div class="row">
-                <!-- <div class="col-md-2"></div> -->
+                <div class="col-md-2"></div>
                 <div class="col-md">
                     <h1 class="text-center" id="headline">Crystal Quest!</h1>
                     <p class="lead text-center">Collect just the right amount to win!</p>
                 </div>
-                <!-- <div class="col-md-2"></div> -->
+                <div class="col-md-2"></div>
             </div>
         </header>
         
-        <section>
+        <section role="main" class="flex-shrink-0">
             <div class="row">
-                <!-- <div class="col-md-2"></div> -->
+                <div class="col-md-2"></div>
                 <div class="col-md">
-                    <article id="directions">
-                        <p>You will be given a random number at the start of each game.</p>
-                        <p>There are four crystals below. By clicking a crystal you will add a specific amount of points to your total score.</p>
-                        <p>You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number.</p>
-                        <p>The value of each crystal is hidden from you until you click it.</p>
-                        <p>Each time the game starts the game will change the value of each crystal.</p>
+                    <article class="text-center" id="directions">
+                        <p>Charge up Magic Crystals by combining less powerful ones.</p>
+                        <p>There are four crystals below. By clicking a crystal you will add a specific amount of magic power to your Magic Crystal.</p>
+                        <p>You win the game by matching your crystal power to the Magic Crystal you are charging, if you exceed the power of the Crystal it will burn out!</p>
+                        <p>The power of each crystal is hidden from you until you click it.</p>
+                        <p>Each time the game starts the game will change the power in each crystal.</p>
                     </article>
                 </div>
-                <!-- <div class="col-md-2"></div> -->
+                <div class="col-md-2"></div>
             </div>
             <div class="row">
-                <!-- <div class="col-md-2"></div> -->
+                <div class="col-md-2"></div>
                 <div class="col-md">
-                    <div id="target-number"></div>
+                    <p>Needed Crystal Power:</p>
+                    <div id="target-number" class="power"></div>
                 </div>
                 <div class="col-md">
                     <div class="row">
                         <div class="col-md">
-                            <span id="wins" class="score"></span>
+                            <p>Charged Crystals: </p><span id="wins" class="score"></span>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md">
-                            <span id="losses" class="score"></span>
+                            <p>Burned Crystals: </p><span id="losses" class="score"></span>
                         </div>
                     </div>
                 </div>
-                <!-- <div class="col-md-2"></div> -->
+                <div class="col-md-2"></div>
             </div>
             <div class="row">
                 <!-- <div class="col-md-2"></div> -->
                 <div class="col-md">
-                    <div id="crystals"></div>
+                    <div id="crystals" class="text-center"></div>
                 </div>
                 <!-- <div class="col-md-2"></div> -->
             </div>
             <div class="row">
-                <!-- <div class="col-md-2"></div> -->
+                <div class="col-md-2"></div>
                 <div class="col-md">
-                    <p>Your total score is:</p>
+                    <p>Current Crystal Power:</p>
                     <div id="total-number"></div>
                 </div>
-                <!-- <div class="col-md-2"></div> -->
+                <div class="col-md-2"></div>
             </div>
             <div class="row">
+                <div class="col-md-2"></div>
                 <div class="col-md">
                     <div id="results"></div>
                 </div>
+                <div class="col-md-2"></div>
             </div>
         </section>
             
@@ -93,13 +98,5 @@
     </div>
 
 </body>
-
-<!--Style -->
-<style>
-
-
-
-</style>
-
 
 </html>
